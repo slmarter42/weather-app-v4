@@ -93,7 +93,7 @@
 
         // Update the UI with the current weather data
         document.getElementById("cityName").innerText = strName;
-        document.getElementById("temperature").innerText = `${objWeatherData.current.temperature_2m}°F`;
+        document.getElementById("temperature").innerText = `${objWeatherData.current_weather.temperature}°F`;
         document.getElementById("windSpeed").innerText = objWeatherData.current.wind_speed_10m;
         document.getElementById("rain").innerText = objWeatherData.current.rain ?? "0";
         document.getElementById("humidity").innerText = objWeatherData.current.relative_humidity_2m;
